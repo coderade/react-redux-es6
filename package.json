@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Project with didactic purposes to study React, Redux and ES6 in an advanced way.",
   "author": "Valdeci Gomes",
+  "scripts": {
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "babel-node tools/srcServer.js"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
