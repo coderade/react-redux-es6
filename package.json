@@ -10,21 +10,24 @@
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.spec.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
-    "bootstrap": "3.4.0",
+    "bootstrap": "3.4.1",
     "jquery": "^3.5.0",
-    "react": "15.0.2",
-    "react-dom": "16.0.1",
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
-    "toastr": "2.1.2"
+    "toastr": "2.1.2",
+    "snyk": "^1.319.2"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
@@ -54,7 +57,7 @@
     "mocha": "2.4.5",
     "nock": "8.0.0",
     "npm-run-all": "1.8.0",
-    "open": "0.0.5",
+    "open": "6.0.0",
     "react-addons-test-utils": "15.0.2",
     "redux-immutable-state-invariant": "1.2.3",
     "redux-mock-store": "1.0.2",
@@ -68,5 +71,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/coderade/react-redux-es6"
-  }
+  },
+  "snyk": true
 }
