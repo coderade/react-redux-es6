@@ -10,21 +10,24 @@
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.spec.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
-    "bootstrap": "3.4.1",
-    "jquery": "^3.3.0",
-    "react": "15.0.2",
-    "react-dom": "16.0.1",
+    "bootstrap": "3.4.0",
+    "jquery": "^3.5.0",
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
-    "toastr": "2.1.2"
+    "toastr": "2.1.2",
+    "snyk": "^1.319.2"
   },
   "devDependencies": {
     "babel-cli": "6.8.0",
@@ -41,7 +44,7 @@
     "cross-env": "1.0.7",
     "css-loader": "0.23.1",
     "enzyme": "2.2.0",
-    "eslint": "2.9.0",
+    "eslint": "4.18.2",
     "eslint-plugin-import": "1.6.1",
     "eslint-plugin-react": "5.0.1",
     "eslint-watch": "2.1.11",
@@ -68,5 +71,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/coderade/react-redux-es6"
-  }
+  },
+  "snyk": true
 }
