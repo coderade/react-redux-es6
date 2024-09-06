@@ -21,10 +21,10 @@
     "jquery": "^3.5.0",
     "react": "16.5.0",
     "react-dom": "16.5.0",
-    "react-redux": "4.4.5",
+    "react-redux": "5.1.0",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
-    "redux": "3.5.2",
+    "redux": "4.0.0",
     "redux-thunk": "2.0.1",
     "toastr": "2.1.2",
     "snyk": "^1.685.0"
